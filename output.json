@@ -1,0 +1,678 @@
+{
+  "topic": "ukraine war",
+  "brief": {
+    "headline": "Russia and Ukraine declare non-overlapping ceasefires as both sides accuse the other of bad faith and ongoing attacks continue",
+    "situation_summary": "On the eve of Russia's Victory Day commemorations, both the Kremlin and Kyiv have announced new ceasefires\u2014but on different dates, with each accusing the other of insincerity or escalation. Russia\u2019s Ministry of Defence declared a May 8\u20139 unilateral ceasefire tied to the Moscow parade, while Ukrainian President Zelenskyy announced a separate May 5\u20136 cessation. Amid these announcements, Ukrainian cities sustained continued drone and missile strikes that killed and injured civilians, leading Kyiv to denounce Russian motives as cynical propaganda. International monitoring and independent verification of front-line adherence remain absent, heightening uncertainty about whether either side\u2019s ceasefire will actually reduce violence. The real-world stakes are high: civilian safety, the credibility of official announcements, and the wider conduct of war during high-profile public events.",
+    "key_conflicts": [
+      {
+        "id": "conflict_1",
+        "conflict_type": "FACTUAL CONFLICT",
+        "severity": "high",
+        "subject": "Ceasefire dates declared by Russia and Ukraine",
+        "source_a_position": "The Russian Ministry of Defence (Al Jazeera, May 4) announced its ceasefire would occur on May 8\u20139 in connection with Victory Day commemorations.",
+        "source_b_position": "Ukrainian officials (Al Jazeera, May 4) declared their own ceasefire for May 5\u20136, a completely separate timeframe.",
+        "why_it_matters": "These mutually exclusive ceasefire windows raise the risk of continued hostilities, render any claimed pause potentially meaningless, and call into question whether either side intends to reduce violence at all.",
+        "next_step": "Obtain independent front-line monitoring or humanitarian reports confirming or refuting compliance with each side\u2019s declared ceasefire schedules."
+      },
+      {
+        "id": "conflict_2",
+        "conflict_type": "CONTESTED CLAIM",
+        "severity": "medium",
+        "subject": "Russian intentions behind the parade ceasefire",
+        "source_a_position": "The Russian Ministry of Defence (Al Jazeera, May 4) frames the ceasefire as a formal, leader-driven act by Vladimir Putin in recognition of Victory Day.",
+        "source_b_position": "Ukrainian President Volodymyr Zelenskyy (The Guardian, May 5) calls the Russian truce 'utter cynicism,' accusing the Kremlin of using it for propaganda while continuing lethal attacks.",
+        "why_it_matters": "Both governments seek to control the narrative globally\u2014the credibility and moral standing of their respective ceasefire announcements are at stake, directly impacting international audiences and domestic morale.",
+        "next_step": "Gather testimonies from local residents and humanitarian groups in active war zones to document the reality of strikes and conduct during the Russian-announced ceasefire, and review timing of reported attacks against the announced truce period."
+      }
+    ],
+    "no_conflicts_note": "",
+    "consensus": [
+      "Victory Day parades in Moscow are proceeding without the usual military hardware, apparently due to heightened security concerns.",
+      "Ukraine has experienced drone and missile attacks with reported civilian casualties in the days immediately before the Russian-announced parade ceasefire.",
+      "Government authorities on both sides are publicly warning their populations and foreign diplomats about safety risks and possible escalation linked to the respective ceasefire periods."
+    ],
+    "open_questions": [
+      "Was there any period of actual compliance on the ground with either the Russian or Ukrainian declared ceasefire\u2014did fighting in key hotspots notably pause?",
+      "Are there independent, non-government eyewitness accounts from Moscow verifying changes in normal city life, security posture, or preparations tied to Victory Day?",
+      "What specific orders or protocols have front-line Russian and Ukrainian commanders received in relation to enforcement or interpretation of the announced truces, and are these orders being followed?"
+    ],
+    "sources": [
+      {
+        "name": "Institute for the Study of War",
+        "date": "2026-05-04",
+        "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-may-4-2026/",
+        "quality": "good",
+        "title": "Russian Offensive Campaign Assessment, May 4, 2026 | ISW"
+      },
+      {
+        "name": "Al Jazeera",
+        "date": "2026-05-04",
+        "url": "https://www.aljazeera.com/news/2026/5/4/russia-and-ukraine-declare-competing-ceasefires",
+        "quality": "good",
+        "title": "Russia and Ukraine declare competing ceasefires | News - Al Jazeera"
+      },
+      {
+        "name": "The Guardian",
+        "date": "2026-05-05",
+        "url": "https://www.theguardian.com/world/2026/may/05/zelenskyy-russia-parade-truce-poltava-attack",
+        "quality": "good",
+        "title": "Zelenskyy condemns Russian 'cynicism' over parade truce as attack ..."
+      }
+    ],
+    "meta": {
+      "topic": "ukraine war",
+      "source_count": 3,
+      "claim_count": 46,
+      "conflict_count": 2,
+      "has_conflicts": true
+    }
+  },
+  "extractions": [
+    {
+      "source": "Institute for the Study of War",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-may-4-2026/",
+      "date": "2026-05-04",
+      "title": "Russian Offensive Campaign Assessment, May 4, 2026 | ISW",
+      "quality": "good",
+      "quality_note": "",
+      "claim_count": 22,
+      "claims": [
+        {
+          "id": "c1",
+          "claim": "A leaked European intelligence report highlights Russian President Vladimir Putin\u2019s increasing concern over his personal safety and the safety of his senior officials",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": "A leaked European intelligence report highlights Russian President Vladimir Putin\u2019s increasing concern over his personal safety and the safety of his senior officials",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c2",
+          "claim": "Western and Russian opposition sources reported on May 4, citing the intelligence report, that Russian security forces have increased security measures as Putin fears possible assassination attempts, including targeted drone strikes",
+          "attributed_to": "Western and Russian opposition sources",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "condition"
+        },
+        {
+          "id": "c3",
+          "claim": "Putin spends most of his time in underground bunkers in Krasnodar Krai",
+          "attributed_to": "European intelligence report",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "condition"
+        },
+        {
+          "id": "c4",
+          "claim": "Putin has stopped going to his residences in Moscow Oblast and Valdai, Novgorod Oblast",
+          "attributed_to": "European intelligence report",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "condition"
+        },
+        {
+          "id": "c5",
+          "claim": "Recent internet shutdowns in Moscow City were at least partially related to Putin\u2019s security and anti-drone protection",
+          "attributed_to": "Sources in Russia familiar with Putin",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "statement"
+        },
+        {
+          "id": "c6",
+          "claim": "Putin amended Federal Protective Service regulations to provide security to 10 high-ranking generals after a December 2025 meeting of security officials",
+          "attributed_to": "European intelligence report",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "action"
+        },
+        {
+          "id": "c7",
+          "claim": "Lieutenant General Fanil Sarvarov, chief of the Russian General Staff\u2019s Operational Training Department, was assassinated on December 22, 2025, in Moscow City",
+          "attributed_to": "European intelligence report",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c8",
+          "claim": "ISW has observed corroborating evidence of enhanced security measures for Putin and high-ranking Russian officials",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "condition"
+        },
+        {
+          "id": "c9",
+          "claim": "There have been numerous assassinations and assassination attempts against high-ranking Russian officials throughout the war",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c10",
+          "claim": "Between May 2023 and December 2025, Russian authorities moved an increased number of short and medium-range air defense systems, including Pantsir-S1 and S-400 systems, near Putin\u2019s Valdai and Moscow City residences",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "action"
+        },
+        {
+          "id": "c11",
+          "claim": "Ukraine has been increasing the range, intensity, and frequency of its long-range drone strike campaign",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "condition"
+        },
+        {
+          "id": "c12",
+          "claim": "A drone strike against Moscow City on May 4 damaged the Mosfilm Tower",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c13",
+          "claim": "The European intelligence report portrayed former Russian Defense Minister and current Russian Security Council Secretary Sergei Shoigu as associated with the risk of a coup",
+          "attributed_to": "European intelligence report",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": "associated with the risk of a coup",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c14",
+          "claim": "CNN, which obtained the intelligence report, noted that it does not provide evidence to support the claims about the coup risk",
+          "attributed_to": "CNN",
+          "attribution_type": "institution",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "statement"
+        },
+        {
+          "id": "c15",
+          "claim": "The Russian Ministry of Defense appointed Colonel General Alexander Chayko to the position of commander-in-chief of the Russian Aerospace Forces (VKS) after recent domestic criticisms of Russian air defense and air campaign failures",
+          "attributed_to": "A source close to the Russian MoD",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "action"
+        },
+        {
+          "id": "c16",
+          "claim": "Alexander Chayko replaced General Viktor Afzalov as commander-in-chief of the VKS",
+          "attributed_to": "A source close to the Russian MoD",
+          "attribution_type": "anonymous",
+          "confidence": "medium",
+          "direct_quote": null,
+          "claim_type": "action"
+        },
+        {
+          "id": "c17",
+          "claim": "Chayko served as chief of staff of the Russian Force Grouping in Syria from 2015 to 2017",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "statement"
+        },
+        {
+          "id": "c18",
+          "claim": "Chayko served as overall commander of the Russian Force Grouping in Syria during September 2019 to November 2020, February to June 2021, and September to December 2022",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "statement"
+        },
+        {
+          "id": "c19",
+          "claim": "Chayko was one of the commanders responsible for Russian strikes targeting Syrian civilians and critical infrastructure throughout the Russian intervention in the Syria Civil War in 2015",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c20",
+          "claim": "Russian forces first infiltrated into the outskirts of Kostyantynivka in late October 2025 but have yet to achieve meaningful operational progress in the Kostyantynivka-Druzhkivka tactical area",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c21",
+          "claim": "Russian forces first infiltrated the eastern outskirts of Kostyantynivka on October 24, 2025, and have failed to make even tactically significant gains in the subsequent six months",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c22",
+          "claim": "ISW has assessed that Russian forces have infiltrated in 10.14 percent of Kostyantynivka and advanced in only 0.7 percent of its eastern outskirts",
+          "attributed_to": "Institute for the Study of War",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "figure"
+        }
+      ]
+    },
+    {
+      "source": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/5/4/russia-and-ukraine-declare-competing-ceasefires",
+      "date": "2026-05-04",
+      "title": "Russia and Ukraine declare competing ceasefires | News - Al Jazeera",
+      "quality": "good",
+      "quality_note": "",
+      "claim_count": 12,
+      "claims": [
+        {
+          "id": "c1",
+          "claim": "Russia announced on Monday that its ceasefire would be between May 8-9",
+          "attributed_to": "Russian Ministry of Defence",
+          "attribution_type": "institution",
+          "confidence": "high",
+          "direct_quote": "a ceasefire has been declared from May 8\u20139, 2026",
+          "claim_type": "figure"
+        },
+        {
+          "id": "c2",
+          "claim": "Kyiv said later that it was calling its own ceasefire for May 5-6",
+          "attributed_to": "Al Jazeera",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "figure"
+        },
+        {
+          "id": "c3",
+          "claim": "The Russian Ministry of Defence said in a post on the state-backed messaging app MAX that the ceasefire was according to Vladimir Putin's decision",
+          "attributed_to": "Russian Ministry of Defence",
+          "attribution_type": "institution",
+          "confidence": "high",
+          "direct_quote": "In accordance with a decision of the Supreme Commander-in-Chief of the Russian Armed Forces, Vladimir Putin, a ceasefire has been declared from May 8\u20139, 2026",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c4",
+          "claim": "Ukraine\u2019s President, Volodymyr Zelenskyy, said he had received no official notice from Russia",
+          "attributed_to": "Volodymyr Zelenskyy",
+          "attribution_type": "person",
+          "confidence": "high",
+          "direct_quote": "As of today, there has been no official appeal to Ukraine regarding the modality of a cessation of hostilities that is being claimed on Russian social media",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c5",
+          "claim": "Ukraine would observe a separate ceasefire beginning at midnight on Tuesday, May 5",
+          "attributed_to": "Volodymyr Zelenskyy",
+          "attribution_type": "person",
+          "confidence": "high",
+          "direct_quote": "we are announcing a ceasefire regime starting at 00:00 (2100 GMT) on the night of May 5-6",
+          "claim_type": "figure"
+        },
+        {
+          "id": "c6",
+          "claim": "Zelenskyy said human life is incomparably more valuable than the 'celebration' of any anniversary",
+          "attributed_to": "Volodymyr Zelenskyy",
+          "attribution_type": "person",
+          "confidence": "high",
+          "direct_quote": "human life is incomparably more valuable than the \u2018celebration\u2019 of any anniversary",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c7",
+          "claim": "Putin first suggested a ceasefire last week during a phone call with Donald Trump",
+          "attributed_to": "Al Jazeera",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c8",
+          "claim": "The Russian defence ministry said it will take all necessary measures to ensure the safety of the Victory Day parade",
+          "attributed_to": "Russian Ministry of Defence",
+          "attribution_type": "institution",
+          "confidence": "high",
+          "direct_quote": "the military will take all necessary measures to ensure the safety of the Victory Day parade",
+          "claim_type": "action"
+        },
+        {
+          "id": "c9",
+          "claim": "Russian defence ministry warned Ukraine not to launch attacks during its declared ceasefire",
+          "attributed_to": "Russian Ministry of Defence",
+          "attribution_type": "institution",
+          "confidence": "high",
+          "direct_quote": "If the Kyiv regime attempts to implement its criminal plans to disrupt the celebration of the 81st anniversary of Victory in the Great Patriotic War, the Russian Armed Forces will launch a retaliatory, massive missile strike on the centre of Kyiv",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c10",
+          "claim": "Russia warned the civilian population of Kyiv and employees of foreign diplomatic missions to leave the city promptly",
+          "attributed_to": "Russian Ministry of Defence",
+          "attribution_type": "institution",
+          "confidence": "high",
+          "direct_quote": "We warn the civilian population of Kyiv and employees of foreign diplomatic missions of the need to leave the city promptly",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c11",
+          "claim": "Zelenskyy said Russia\u2019s decision not to display military equipment at the parade was due to fear of Ukraine\u2019s drones and evidence of Moscow\u2019s growing weakness",
+          "attributed_to": "Volodymyr Zelenskyy",
+          "attribution_type": "person",
+          "confidence": "high",
+          "direct_quote": "This summer will be a moment when [Russian President Vladimir] Putin decides what to do next: expand the war or move to diplomacy. And we must push him toward diplomacy... They cannot afford military equipment \u2013 and they fear drones may buzz over Red Square. This is telling. It shows they are not strong now",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c12",
+          "claim": "Putin previously announced a 32-hour ceasefire for Orthodox Easter in April, with Zelenskyy confirming that Ukraine would honour it",
+          "attributed_to": "Al Jazeera",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        }
+      ]
+    },
+    {
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/world/2026/may/05/zelenskyy-russia-parade-truce-poltava-attack",
+      "date": "2026-05-05",
+      "title": "Zelenskyy condemns Russian 'cynicism' over parade truce as attack ...",
+      "quality": "good",
+      "quality_note": "",
+      "claim_count": 12,
+      "claims": [
+        {
+          "id": "c1",
+          "claim": "Russian attack on gas facility in Poltava region kills three energy firm employees and two emergency service workers",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c2",
+          "claim": "Three employees of the state energy firm Naftogaz were killed in an initial attack on a gas facility in Ukraine\u2019s central Poltava region",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c3",
+          "claim": "Two emergency service workers died at the scene in a follow-on bombing in Poltava region",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c4",
+          "claim": "Thirty-seven people were injured in the strikes",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "figure"
+        },
+        {
+          "id": "c5",
+          "claim": "Volodymyr Zelenskyy accused the Kremlin of \"utter cynicism\" for killing five people in overnight strikes at the same time as seeking a truce so it can stage a military parade in Moscow",
+          "attributed_to": "Volodymyr Zelenskyy",
+          "attribution_type": "person",
+          "confidence": "high",
+          "direct_quote": "It is utter cynicism to ask for a ceasefire in order to hold propaganda celebrations while carrying out missile and drone strikes every single day leading up to it.",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c6",
+          "claim": "Vladimir Putin has announced a unilateral ceasefire around Russia marking the anniversary of the Soviet Union\u2019s victory over Nazi Germany on Friday",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c7",
+          "claim": "For the first time in almost 20 years, the Red Square parade will take place without military hardware",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c8",
+          "claim": "Zelenskyy has offered his own 24-hour ceasefire, beginning at midnight on Wednesday",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c9",
+          "claim": "Zelenskyy said Ukraine would \"act reciprocally\" in the event that Russia stopped firing",
+          "attributed_to": "Volodymyr Zelenskyy",
+          "attribution_type": "person",
+          "confidence": "high",
+          "direct_quote": "act reciprocally",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c10",
+          "claim": "Foreign minister Andrii Sybiha said two of the killed were first responders, killed in a vile double-tap strike targeting those who arrived to help people at the scene of the attack",
+          "attributed_to": "Andrii Sybiha",
+          "attribution_type": "person",
+          "confidence": "high",
+          "direct_quote": "Two of the killed were first responders, killed in a vile double-tap strike targeting those who arrived to help people at the scene of the attack.",
+          "claim_type": "statement"
+        },
+        {
+          "id": "c11",
+          "claim": "One person was killed in the north-eastern Kharkiv region as Russia fired 11 ballistic missiles and 164 drones across the country",
+          "attributed_to": "The Guardian",
+          "attribution_type": "outlet",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "event"
+        },
+        {
+          "id": "c12",
+          "claim": "Russia\u2019s defence ministry said it had downed more than 300 Ukrainian drones between late Monday and early Tuesday",
+          "attributed_to": "Russia\u2019s defence ministry",
+          "attribution_type": "institution",
+          "confidence": "high",
+          "direct_quote": null,
+          "claim_type": "figure"
+        }
+      ]
+    }
+  ],
+  "contradiction": {
+    "status": "ok",
+    "conflict_count": 2,
+    "has_conflicts": true,
+    "conflicts": [
+      {
+        "id": "conflict_1",
+        "conflict_type": "factual_conflict",
+        "severity": "high",
+        "subject": "Ceasefire dates declared by Russia and Ukraine",
+        "claim_a": {
+          "claim": "Russia announced on Monday that its ceasefire would be between May 8-9",
+          "source": "Al Jazeera",
+          "attributed_to": "Russian Ministry of Defence",
+          "date": "2026-05-04"
+        },
+        "claim_b": {
+          "claim": "Kyiv said later that it was calling its own ceasefire for May 5-6",
+          "source": "Al Jazeera",
+          "attributed_to": "Al Jazeera",
+          "date": "2026-05-04"
+        },
+        "explanation": "The Russian Ministry of Defence publicly states its ceasefire is scheduled for May 8-9, while Ukrainian officials declare a separate, non-overlapping ceasefire for May 5-6. These are mutually exclusive timeframes and represent direct, factual disagreement on when each side will halt hostilities. The mismatch is critical as any investigator must clarify whether these conflicting ceasefires amount to any real suspension of fighting or simply parallel unilateral actions.",
+        "temporal_gap": true,
+        "temporal_note": "Russia: May 8-9; Ukraine: May 5-6 \u2014 no overlap",
+        "investigative_weight": "Determine if actual ground ceasefire compliance occurs during either announced period or if fighting continues unabated; obtain third-party monitoring reports for each window."
+      },
+      {
+        "id": "conflict_2",
+        "conflict_type": "contested_claim",
+        "severity": "medium",
+        "subject": "Russian intentions behind the parade ceasefire",
+        "claim_a": {
+          "claim": "The Russian Ministry of Defence said in a post on the state-backed messaging app MAX that the ceasefire was according to Vladimir Putin's decision",
+          "source": "Al Jazeera",
+          "attributed_to": "Russian Ministry of Defence",
+          "date": "2026-05-04"
+        },
+        "claim_b": {
+          "claim": "Volodymyr Zelenskyy accused the Kremlin of 'utter cynicism' for killing five people in overnight strikes at the same time as seeking a truce so it can stage a military parade in Moscow",
+          "source": "The Guardian",
+          "attributed_to": "Volodymyr Zelenskyy",
+          "date": "2026-05-05"
+        },
+        "explanation": "Russia presents the ceasefire as a leader-driven, formal initiative for Victory Day, implying humanitarian or commemorative aims. In direct contrast, Ukraine's president asserts the truce is propaganda to cover ongoing attacks and facilitate a parade, calling Russian motives cynical and insincere. This contest of narratives is key to understanding each side's messaging and legitimacy in seeking a ceasefire.",
+        "temporal_gap": false,
+        "temporal_note": "",
+        "investigative_weight": "Seek independent evidence of Russian military activity before and during the proposed ceasefire; interview affected civilians, monitor social/official messaging, and reconcile competing narratives."
+      }
+    ],
+    "consensus_claims": [
+      {
+        "claim": "Victory Day parades in Moscow will occur without normal displays of military hardware due to security concerns",
+        "sources": [
+          "The Guardian",
+          "Al Jazeera"
+        ]
+      },
+      {
+        "claim": "Ukraine continues to experience drone and missile strikes, with casualties and infrastructure damage, in the days immediately preceding the announced Russian ceasefire",
+        "sources": [
+          "The Guardian",
+          "Al Jazeera"
+        ]
+      },
+      {
+        "claim": "Russian and Ukrainian authorities are issuing public warnings and statements about civilian safety and threats tied to the ceasefire windows",
+        "sources": [
+          "Al Jazeera",
+          "The Guardian"
+        ]
+      }
+    ],
+    "coverage_gaps": [
+      "No source provides third-party verification or ground reporting of actual front-line ceasefire compliance during the stated periods.",
+      "No evidence is presented from independent Moscow-based observers regarding changes in daily life, security posture, or parade preparations.",
+      "There is little to no information about how local commanders or units on either side are instructed to implement or interpret the announced ceasefires."
+    ],
+    "topic_summary": "Competing Russia-Ukraine ceasefire declarations and associated claims about attacks, motives, and security in early May 2026.",
+    "raw": {
+      "topic_summary": "Competing Russia-Ukraine ceasefire declarations and associated claims about attacks, motives, and security in early May 2026.",
+      "conflict_count": 2,
+      "has_conflicts": true,
+      "conflicts": [
+        {
+          "id": "conflict_1",
+          "conflict_type": "factual_conflict",
+          "severity": "high",
+          "subject": "Ceasefire dates declared by Russia and Ukraine",
+          "claim_a": {
+            "claim": "Russia announced on Monday that its ceasefire would be between May 8-9",
+            "source": "Al Jazeera",
+            "attributed_to": "Russian Ministry of Defence",
+            "date": "2026-05-04"
+          },
+          "claim_b": {
+            "claim": "Kyiv said later that it was calling its own ceasefire for May 5-6",
+            "source": "Al Jazeera",
+            "attributed_to": "Al Jazeera",
+            "date": "2026-05-04"
+          },
+          "explanation": "The Russian Ministry of Defence publicly states its ceasefire is scheduled for May 8-9, while Ukrainian officials declare a separate, non-overlapping ceasefire for May 5-6. These are mutually exclusive timeframes and represent direct, factual disagreement on when each side will halt hostilities. The mismatch is critical as any investigator must clarify whether these conflicting ceasefires amount to any real suspension of fighting or simply parallel unilateral actions.",
+          "temporal_gap": true,
+          "temporal_note": "Russia: May 8-9; Ukraine: May 5-6 \u2014 no overlap",
+          "investigative_weight": "Determine if actual ground ceasefire compliance occurs during either announced period or if fighting continues unabated; obtain third-party monitoring reports for each window."
+        },
+        {
+          "id": "conflict_2",
+          "conflict_type": "contested_claim",
+          "severity": "medium",
+          "subject": "Russian intentions behind the parade ceasefire",
+          "claim_a": {
+            "claim": "The Russian Ministry of Defence said in a post on the state-backed messaging app MAX that the ceasefire was according to Vladimir Putin's decision",
+            "source": "Al Jazeera",
+            "attributed_to": "Russian Ministry of Defence",
+            "date": "2026-05-04"
+          },
+          "claim_b": {
+            "claim": "Volodymyr Zelenskyy accused the Kremlin of 'utter cynicism' for killing five people in overnight strikes at the same time as seeking a truce so it can stage a military parade in Moscow",
+            "source": "The Guardian",
+            "attributed_to": "Volodymyr Zelenskyy",
+            "date": "2026-05-05"
+          },
+          "explanation": "Russia presents the ceasefire as a leader-driven, formal initiative for Victory Day, implying humanitarian or commemorative aims. In direct contrast, Ukraine's president asserts the truce is propaganda to cover ongoing attacks and facilitate a parade, calling Russian motives cynical and insincere. This contest of narratives is key to understanding each side's messaging and legitimacy in seeking a ceasefire.",
+          "temporal_gap": false,
+          "temporal_note": "",
+          "investigative_weight": "Seek independent evidence of Russian military activity before and during the proposed ceasefire; interview affected civilians, monitor social/official messaging, and reconcile competing narratives."
+        }
+      ],
+      "consensus_claims": [
+        {
+          "claim": "Victory Day parades in Moscow will occur without normal displays of military hardware due to security concerns",
+          "sources": [
+            "The Guardian",
+            "Al Jazeera"
+          ]
+        },
+        {
+          "claim": "Ukraine continues to experience drone and missile strikes, with casualties and infrastructure damage, in the days immediately preceding the announced Russian ceasefire",
+          "sources": [
+            "The Guardian",
+            "Al Jazeera"
+          ]
+        },
+        {
+          "claim": "Russian and Ukrainian authorities are issuing public warnings and statements about civilian safety and threats tied to the ceasefire windows",
+          "sources": [
+            "Al Jazeera",
+            "The Guardian"
+          ]
+        }
+      ],
+      "coverage_gaps": [
+        "No source provides third-party verification or ground reporting of actual front-line ceasefire compliance during the stated periods.",
+        "No evidence is presented from independent Moscow-based observers regarding changes in daily life, security posture, or parade preparations.",
+        "There is little to no information about how local commanders or units on either side are instructed to implement or interpret the announced ceasefires."
+      ]
+    }
+  }
+}

@@ -56,16 +56,6 @@ async def health():
 
 @app.post("/investigate")
 async def investigate(request: InvestigateRequest):
-    """
-    Runs full pipeline — search → retrieve → extract → contradict → synthesize.
-    Streams progress events via SSE so the frontend can show live steps.
-
-    Event shape:
-    { "step": str, "status": "in_progress" | "done" | "error", "data": any }
-
-    Final event:
-    { "step": "complete", "status": "done", "data": { full result } }
-    """
     queue: asyncio.Queue = asyncio.Queue()
 
     async def progress(step: str, status: str, data=None):
@@ -73,8 +63,8 @@ async def investigate(request: InvestigateRequest):
 
     async def run():
         try:
-            # emit each stage as it starts and completes
-            await progress("search", "in_progress")
+            # remove the manual "search in_progress" emit here —
+            # run_pipeline emits it internally
             result = await run_pipeline(
                 topic=request.topic,
                 mode=request.mode,
@@ -85,7 +75,7 @@ async def investigate(request: InvestigateRequest):
             logger.error("Pipeline error: %s", e)
             await progress("error", "error", {"reason": str(e)})
         finally:
-            await queue.put(None)  # sentinel
+            await queue.put(None)
 
     async def event_stream():
         asyncio.create_task(run())
@@ -98,43 +88,59 @@ async def investigate(request: InvestigateRequest):
     return StreamingResponse(
         event_stream(),
         media_type="text/event-stream",
-        headers={
-            "Cache-Control": "no-cache",
-            "X-Accel-Buffering": "no", 
-        }
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
     )
 
 
 @app.post("/followup")
 async def followup(request: FollowUpRequest):
-    """
-    Handles follow-up questions on an existing investigation.
-    Passes thread_id so the agent recalls full context.
-    Does NOT re-run the pipeline — just calls synthesis agent directly.
-    """
     if not request.thread_id:
         raise HTTPException(status_code=400, detail="thread_id is required for follow-up")
-
     if not request.question.strip():
         raise HTTPException(status_code=400, detail="question cannot be empty")
 
     logger.info("Follow-up received — thread: %s | question: %s", request.thread_id, request.question[:80])
 
-    # inject follow-up question into the topic for synthesis context
     topic_with_followup = f"Follow-up question: {request.question}"
 
-    result = await synthesis_agent(
+    result, response_thread_id = await synthesis_agent(
         topic=topic_with_followup,
         extractions=request.extractions,
         contradiction=request.contradiction,
-        thread_id=request.thread_id
+        thread_id=None
     )
 
     if result is None:
         raise HTTPException(status_code=500, detail="Synthesis agent failed to respond")
 
+    # Build a readable markdown answer from the structured brief
+    parts = []
+    if result.get("headline"):
+        parts.append(f"## {result['headline']}")
+    if result.get("situation_summary"):
+        parts.append(result["situation_summary"])
+    if result.get("key_conflicts"):
+        parts.append("**Key Conflicts**")
+        for c in result["key_conflicts"]:
+            text = c if isinstance(c, str) else c.get("summary") or c.get("description") or str(c)
+            parts.append(f"- {text}")
+    if result.get("no_conflicts_note"):
+        parts.append(result["no_conflicts_note"])
+    if result.get("consensus"):
+        parts.append("**Consensus**")
+        for c in result["consensus"]:
+            text = c if isinstance(c, str) else c.get("claim") or str(c)
+            parts.append(f"- {text}")
+    if result.get("open_questions"):
+        parts.append("**Open Questions**")
+        for q in result["open_questions"]:
+            text = q if isinstance(q, str) else q.get("question") or str(q)
+            parts.append(f"- {text}")
+
+    answer_text = "\n\n".join(parts) if parts else "No answer could be generated."
+
     return {
         "status": "ok",
-        "thread_id": request.thread_id,
-        "answer": result
+        "thread_id": response_thread_id,
+        "answer": answer_text
     }

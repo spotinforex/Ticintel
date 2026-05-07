@@ -13,10 +13,11 @@ from agent.ai import (
 logger = logging.getLogger(__name__)
 
 logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        datefmt="%H:%M:%S"
-    )
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%H:%M:%S"
+)
+
 
 def parse_search_output(raw: str) -> dict:
     """
@@ -31,19 +32,6 @@ def parse_search_output(raw: str) -> dict:
 
 
 async def run_extraction_pipeline(viable: list) -> dict:
-    """
-    Runs extraction agent on all viable articles sequentially.
-
-    Returns:
-    {
-        "extractions": [...],
-        "failed": [...],
-        "total_claims": int,
-        "good_count": int,
-        "thin_count": int,
-        "noisy_count": int
-    }
-    """
     extractions = []
     failed = []
 
@@ -53,7 +41,7 @@ async def run_extraction_pipeline(viable: list) -> dict:
         source = article.source if hasattr(article, "source") else article.get("source", "unknown")
         logger.info("Extracting [%d/%d] — %s", i + 1, len(viable), source)
 
-        result = await extraction_agent(article)
+        result, _ = await extraction_agent(article)
 
         if result is None:
             logger.warning("Extraction failed for [%s] — skipping", source)
@@ -94,24 +82,9 @@ async def run_extraction_pipeline(viable: list) -> dict:
 
 
 async def run_contradiction_pipeline(extractions: list[dict]) -> dict:
-    """
-    Runs contradiction agent on all extractions.
-
-    Returns:
-    {
-        "status": "ok" | "no_conflicts" | "failed",
-        "conflict_count": int,
-        "has_conflicts": bool,
-        "conflicts": [...],
-        "consensus_claims": [...],
-        "coverage_gaps": [...],
-        "topic_summary": str,
-        "raw": dict
-    }
-    """
     logger.info("Running contradiction agent on %d extractions...", len(extractions))
 
-    result = await contradiction_agent(extractions)
+    result, _ = await contradiction_agent(extractions)
 
     if result is None:
         logger.error("Contradiction agent returned no output")
@@ -166,26 +139,9 @@ async def run_synthesis_pipeline(
     extractions: list[dict],
     contradiction: dict
 ) -> dict:
-    """
-    Runs synthesis agent to produce the final investigative brief.
-
-    Returns:
-    {
-        "status": "ok" | "failed",
-        "brief": {...} | None,
-        "headline": str,
-        "situation_summary": str,
-        "key_conflicts": [...],
-        "no_conflicts_note": str,
-        "consensus": [...],
-        "open_questions": [...],
-        "sources": [...],
-        "meta": {...}
-    }
-    """
     logger.info("Running synthesis agent...")
 
-    result = await synthesis_agent(topic, extractions, contradiction)
+    result, _ = await synthesis_agent(topic, extractions, contradiction)
 
     if result is None:
         logger.error("Synthesis agent returned no output")
@@ -219,11 +175,6 @@ async def run_synthesis_pipeline(
 
 
 async def search_and_retrieve(topic: str, mode: str = "quick") -> dict:
-    """
-    Runs search agent then retrieves full article text.
-
-    Returns status: ok | clarification | error
-    """
     logger.info("Pipeline starting — topic: '%s', mode: %s", topic, mode)
     logger.info("Step 1/2 — Running search agent...")
 
@@ -374,4 +325,3 @@ async def run_pipeline(
         },
         "retrieval_stats": search_result["stats"]
     }
-

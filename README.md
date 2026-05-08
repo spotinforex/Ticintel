@@ -72,6 +72,10 @@ Mini is used for search and extraction — mechanical tasks with clear input/out
 
 ---
 
+## Demo Video 
+
+- YouTube: https://youtu.be/jRyxCSk0y9w?si=Xwvn69PD-Ullc7eu
+
 ## Built With
 
 - [Backboard](https://backboard.io) — multi-agent orchestration, routing, memory, web search

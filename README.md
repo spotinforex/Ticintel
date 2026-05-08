@@ -2,13 +2,13 @@
 
 **Truth In Coverage Intelligence**
 
-TICINTEL is an investigative search tool that goes beyond summarizing what sources say — it maps where they disagree. Given a topic, it retrieves full article text from multiple outlets, extracts structured claims per source, detects genuine contradictions across them, and produces an investigative brief with attribution, conflict analysis, and actionable next steps.
+TICINTEL is an investigative search tool that goes beyond summarizing what sources say it maps where they disagree. Given a topic, it retrieves full article text from multiple outlets, extracts structured claims per source, detects genuine contradictions across them, and produces an investigative brief with attribution, conflict analysis, and actionable next steps.
 
 ---
 
 ## What Makes It Different
 
-Normal AI search tools resolve sources into one blended answer. TICINTEL surfaces conflict. Every claim is pinned to the outlet or person who made it. Where sources contradict each other — on figures, events, or policy outcomes — the tool flags the conflict, explains why it matters, and tells an investigator what to do next.
+Normal AI search tools resolve sources into one blended answer. TICINTEL surfaces conflict. Every claim is pinned to the outlet or person who made it. Where sources contradict each other on figures, events, or policy outcomes the tool flags the conflict, explains why it matters, and tells an investigator what to do next.
 
 ---
 

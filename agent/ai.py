@@ -50,7 +50,7 @@ async def search_agent(topic: str, mode: str = "quick", thread_id: str | None = 
         llm_provider="openai",
         model_name="gpt-4.1-mini",
         assistant_id=search_assistant_id,
-        web_search="off", # Due to a server side bug that crashes the agent when enabled, this feature is turned off for now
+        web_search="Auto", 
         thread_id=thread_id,
     )
     response = await client.send_message(prompt, **kwargs)

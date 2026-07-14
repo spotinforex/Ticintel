@@ -106,6 +106,7 @@ curl -X POST http://127.0.0.1:8000/followup \
 ## Links
 
 Video Link: [TicIntel Video](https://youtu.be/jRyxCSk0y9w?si=KdRwnKYvAM1B8T-L)
+
 Live App Link: [App](https://ticintel-frontend.vercel.app/)
 
 ## Example use case
